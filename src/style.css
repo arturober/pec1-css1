@@ -1,8 +1,7 @@
-html {
-  color-scheme: light dark;
-  font-family: system-ui;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
+@layer base, layout, components, theme, utilities;
+
+@import url('css/base.css') layer(base);
+@import url('css/layout.css') layer(layout);
+@import url('css/components.css') layer(components);
+@import url('css/theme.css') layer(theme);
+@import url('css/utilities.css') layer(utilities);

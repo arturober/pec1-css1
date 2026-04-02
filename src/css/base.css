@@ -1,0 +1,65 @@
+/* En esta capa pondré tanto los resets (quitar estilos base por defecto) como mis estilos base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --button-bg-color: var(--primary-700);
+  --button-text-color: var(--text-50);
+  --transition-duration: 300ms;
+  --animation-duration: 300ms;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-white);
+  color: var(--text-900);
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 0;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 30%);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  transition: background-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--button-bg-color) 90%,
+      var(--background-50)
+    );
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 40%);
+  }
+}

@@ -1,14 +1,40 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parcel Vanilla App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="js/index.js"></script>
   </head>
-  <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
+  <body class="portada">
+    <div class="portada-overlay">
+      <div class="portada-title">
+        La Web del <span class="text-primary">Gourmet</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/" class="c-nav__link">Inicio</a></li>
+          <li>
+            <a href="/categoria" class="c-nav__link">Restaurantes</a>
+          </li>
+          <li>
+            <a href="/links" class="c-nav__link">Enlaces</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="portada-subtitle">Los Mejores Restaurantes de la Ciudad</div>
+      <div class="portada-text">
+        Descubre la mejor gastronomía de tu zona explorando nuestra selección de
+        restaurantes exquisitamente elegidos por nuestros mejores críticos.
+      </div>
+      <a href="/categoria" class="btn">Empezar a explorar</a>
+    </div>
   </body>
 </html>

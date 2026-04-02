@@ -1,0 +1,6 @@
+{
+  "plugins": {
+    "postcss-import": {},
+    "@csstools/postcss-cascade-layers": {}
+  }
+}

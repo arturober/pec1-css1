@@ -1,0 +1,167 @@
+/* Variables de estilo base (colores, texto,...) y temas de alto contraste o sin animación (reduced motion) por accesibilidad */
+
+/*Tema de colores generado con https://www.realtimecolors.com/ */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-white: #fafafa;
+
+    --text-50: #f2f6ee;
+    --text-100: #e4eedd;
+    --text-200: #caddbb;
+    --text-300: #afcc99;
+    --text-400: #95bb77;
+    --text-500: #7aaa55;
+    --text-600: #628844;
+    --text-700: #496633;
+    --text-800: #314422;
+    --text-900: #182211;
+    --text-950: #0c1109;
+
+    --background-50: #f2f7ee;
+    --background-100: #e6efdc;
+    --background-200: #ccdfb9;
+    --background-300: #b3cf96;
+    --background-400: #99bf73;
+    --background-500: #80af50;
+    --background-600: #668c40;
+    --background-700: #4d6930;
+    --background-800: #334620;
+    --background-900: #1a2310;
+    --background-950: #0d1108;
+
+    --primary-50: #f3fbe9;
+    --primary-100: #e6f7d4;
+    --primary-200: #cdf0a8;
+    --primary-300: #b4e87d;
+    --primary-400: #9be052;
+    --primary-500: #82d926;
+    --primary-600: #68ad1f;
+    --primary-700: #4e8217;
+    --primary-800: #34570f;
+    --primary-900: #1a2b08;
+    --primary-950: #0d1604;
+
+    --secondary-50: #eef6f5;
+    --secondary-100: #ddeeeb;
+    --secondary-200: #bbddd7;
+    --secondary-300: #99ccc3;
+    --secondary-400: #77bbaf;
+    --secondary-500: #55aa9c;
+    --secondary-600: #44887c;
+    --secondary-700: #33665d;
+    --secondary-800: #22443e;
+    --secondary-900: #11221f;
+    --secondary-950: #091110;
+
+    --accent-50: #eef5f6;
+    --accent-100: #ddebee;
+    --accent-200: #bbd6dd;
+    --accent-300: #99c2cc;
+    --accent-400: #77adbb;
+    --accent-500: #5599aa;
+    --accent-600: #447a88;
+    --accent-700: #335c66;
+    --accent-800: #223d44;
+    --accent-900: #111f22;
+    --accent-950: #090f11;
+
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #101010;
+    
+    --text-50: #0c1109;
+    --text-100: #182211;
+    --text-200: #314422;
+    --text-300: #496633;
+    --text-400: #628844;
+    --text-500: #7aaa55;
+    --text-600: #95bb77;
+    --text-700: #afcc99;
+    --text-800: #caddbb;
+    --text-900: #e4eedd;
+    --text-950: #f2f6ee;
+
+    --background-50: #0d1208;
+    --background-100: #1a2310;
+    --background-200: #334620;
+    --background-300: #4d6a2f;
+    --background-400: #668d3f;
+    --background-500: #80b04f;
+    --background-600: #99c072;
+    --background-700: #b3d095;
+    --background-800: #ccdfb9;
+    --background-900: #e6efdc;
+    --background-950: #f2f7ed;
+
+    --primary-50: #0d1604;
+    --primary-100: #1a2b08;
+    --primary-200: #34570f;
+    --primary-300: #4e8217;
+    --primary-400: #68ad1f;
+    --primary-500: #82d926;
+    --primary-600: #9be052;
+    --primary-700: #b4e87d;
+    --primary-800: #cdf0a8;
+    --primary-900: #e6f7d4;
+    --primary-950: #f3fbe9;
+
+    --secondary-50: #091110;
+    --secondary-100: #11221f;
+    --secondary-200: #22443e;
+    --secondary-300: #33665d;
+    --secondary-400: #44887c;
+    --secondary-500: #55aa9c;
+    --secondary-600: #77bbaf;
+    --secondary-700: #99ccc3;
+    --secondary-800: #bbddd7;
+    --secondary-900: #ddeeeb;
+    --secondary-950: #eef6f5;
+
+    --accent-50: #090f11;
+    --accent-100: #111f22;
+    --accent-200: #223d44;
+    --accent-300: #335c66;
+    --accent-400: #447a88;
+    --accent-500: #5599aa;
+    --accent-600: #77adbb;
+    --accent-700: #99c2cc;
+    --accent-800: #bbd6dd;
+    --accent-900: #ddebee;
+    --accent-950: #eef5f6;
+  }
+
+  .card-restaurante {
+    background-color: #151515;
+  }
+}
+
+:root {
+    
+    --font-family: "Inter", Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-duration: 0.01s;
+    --animation-duration: 0.01s;
+  }
+}
+
+/* 3. Contraste Aumentado */
+@media (prefers-contrast: more) {
+  .button {
+    border: 2px solid var(--text-color);
+  }
+
+  .card {
+    border: 2px solid var(--secondary-color);
+  }
+
+  .sidebar a {
+    border: 1px dotted var(--primary-color);
+  }
+}
