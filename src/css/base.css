@@ -33,6 +33,19 @@ ol {
   list-style: none;
 }
 
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+}
+
+h2, dl {
+  margin: 1rem 0;
+}
+
 img,
 picture {
   max-width: 100%;
@@ -42,6 +55,10 @@ picture {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+iframe {
+  border: 0;
 }
 
 button,

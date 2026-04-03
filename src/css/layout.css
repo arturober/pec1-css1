@@ -111,6 +111,18 @@ footer .main-container {
   margin-inline: auto;
 }
 
+.grid-2cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media (max-width: 1200px) {
   .main-container {
     max-width: none;
@@ -163,5 +175,9 @@ footer .main-container {
         color: var(--color-white);
       }
     }
+  }
+
+  .grid-2cols {
+    grid-template-columns: 1fr;
   }
 }

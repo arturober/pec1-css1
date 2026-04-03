@@ -5,3 +5,5 @@
 @import url('css/components.css') layer(components);
 @import url('css/theme.css') layer(theme);
 @import url('css/utilities.css') layer(utilities);
+
+@import "ol/ol.css"; /*OpenLayers*/

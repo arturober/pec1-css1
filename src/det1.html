@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,9 +10,142 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/detalle.js"></script>
+  </head>
+  <body>
+    <include src="./src/fragments/header.html"></include>
+    <main>
+      <div class="main-intro text-center">
+        <h1>Abrasas & Humo</h1>
+        <p>
+          El sabor ancestral del fuego y las mejores carnes maduradas en un
+          entorno rústico y acogedor.
+        </p>
+      </div>
+      <div class="main-container info-restaurante flex-col">
+        <section class="intro-restaurante">
+          <img
+            class="img-braseria"
+            src="./assets/images/braseria.jpg"
+            alt="Interior Restaurante Abrasas & Humo"
+          />
+          <div class="flex-col">
+            <p>
+              En <strong>Abrasas & Humo</strong>, rescatamos la cocina de
+              origen. Utilizamos maderas seleccionadas de encina y sarmiento
+              para dotar a nuestros cortes de carne de buey y verduras de
+              temporada de un aroma ahumado inconfundible. Un espacio donde la
+              técnica de la brasa se eleva a la categoría de arte, ofreciendo
+              una experiencia sensorial única para los amantes del sabor
+              auténtico.
+            </p>
+            <p>
+              En <strong>Abrasas & Humo</strong>, no solo cocinamos; rendimos
+              culto al elemento que cambió la historia de la humanidad: el
+              fuego. Nuestra filosofía se aleja de las prisas del mundo moderno
+              para abrazar los tiempos pausados de la brasa y el respeto sagrado
+              por el producto.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2>Nuestro platos destacados</h2>
+          <div class="galeria-restaurante">
+            <figure>
+              <img
+                src="./assets/images/braseria1.jpg"
+                alt="Entrecot a la brasa"
+              />
+              <figcaption>Entrecot a la brasa</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./assets/images/braseria2.jpg"
+                alt="Parrillada de verduras"
+              />
+              <figcaption>Parrillada de verduras</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./assets/images/braseria3.jpg"
+                alt="Hamburguesa a la brasa"
+              />
+              <figcaption>Hamburguesa a la brasa</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section>
+          <h2>El Corazón de Nuestra Cocina</h2>
+          <p>
+            Todo comienza con la selección de la madera. Utilizamos
+            <em>encina</em>, por su calor constante y duradero, y
+            <em>sarmiento de vid</em>, que aporta esos matices frutales y
+            elegantes tan característicos de nuestra tierra. Cada corte de
+            carne, desde nuestro chuletón madurado durante 60 días hasta el
+            secreto ibérico, es tratado con una técnica de asado que sella los
+            jugos y potencia los sabores naturales mediante una caramelización
+            perfecta.
+          </p>
+        </section>
+        <section>
+          <h2>Una Experiencia para los Sentidos</h2>
+          <dl>
+            <dt>El Aroma</dt>
+            <dd>
+              Desde que cruzas el umbral, el perfume de la leña y el tostado de
+              la carne te envuelven en un abrazo cálido y nostálgico.
+            </dd>
+
+            <dt>El Espacio</dt>
+            <dd>
+              Paredes de piedra vista, vigas de madera recuperada y una
+              iluminación tenue crean el refugio perfecto para una cena íntima o
+              una celebración familiar alrededor de una mesa generosa.
+            </dd>
+
+            <dt>La Huerta de Hierro</dt>
+            <dd>
+              No todo es carne. Nuestras verduras de temporada, rescatadas
+              directamente de agricultores locales, pasan por la parrilla para
+              revelar texturas y dulzuras que solo el contacto directo con el
+              fuego puede extraer.
+            </dd>
+
+            <dt>Dirección</dt>
+            <dd>
+              Puedes encontrarnos en
+              <span class="ubicacion"
+                >Calle de los Herreros, 14, 05001 Ávila</span
+              >
+            </dd>
+          </dl>
+        </section>
+        <section
+          id="map"
+          data-lat="40.65670019372843"
+          data-lng="-4.693957914153591"
+        ></section>
+        <section>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/bfwozOvEVdI?si=pev9vYXSaLDeUiQa"
+            title="YouTube video player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </div>
+    </main>
+    <include src="./src/fragments/footer.html"></include>
+  </body>
 </html>

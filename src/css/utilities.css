@@ -22,3 +22,16 @@
 .text-center {
   text-align: center;
 }
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.grid-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.padding {
+  padding: 1rem;
+}

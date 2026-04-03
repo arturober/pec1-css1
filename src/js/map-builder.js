@@ -1,3 +1,10 @@
+import { View, Map, Feature } from "ol";
+import { OSM, Vector as VectorSource } from "ol/source";
+import { Tile as TileLayer, Vector as VectorLayer } from "ol/layer";
+import { useGeographic } from "ol/proj";
+import { Circle as CircleStyle, Fill, Stroke, Style } from "ol/style.js";
+import { Point } from "ol/geom";
+
 export class MapBuilder {
   #map;
   #view;
@@ -25,9 +32,9 @@ export class MapBuilder {
       view: this.#view,
     });
 
-    this.#vectorLayer = new VectorLayer<VectorSource>({
+    this.#vectorLayer = new VectorLayer({
       map: this.#map,
-      source: new VectorSource<Feature<Geometry>>({
+      source: new VectorSource({
         features: [],
       }),
     });

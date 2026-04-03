@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,9 +10,134 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/detalle.js"></script>
+  </head>
+  <body>
+    <include src="./src/fragments/header.html"></include>
+    <main>
+      <div class="main-intro text-center">
+        <h1>L'Essence</h1>
+        <p>
+          Una experiencia de estrella Michelin en el corazón de la ciudad.
+          Especializados en menú degustación de 12 tiempos con maridaje de
+          autor.
+        </p>
+      </div>
+      <div class="main-container info-restaurante flex-col">
+        <section class="intro-restaurante">
+          <img
+            class="img-braseria"
+            src="./assets/images/gourmet.jpg"
+            alt="Interior Restaurante Abrasas & Humo"
+          />
+          <div class="flex-col">
+            <p>
+              <strong>L'Essence</strong> es un laboratorio de sabores donde la
+              técnica moderna se une al respeto absoluto por la materia prima.
+              Nuestro chef propone un viaje gastronómico a través de menús
+              degustación estacionales que desafían la percepción y celebran la
+              biodiversidad local. Un entorno minimalista y sofisticado donde
+              cada plato cuenta una historia de innovación y tradición.
+            </p>
+            <p>
+              <strong>L'Essence</strong> nace de una ambición clara: desnudar la
+              gastronomía de artificios para llegar a la raíz del sabor. Es un
+              espacio donde la alta cocina de vanguardia se encuentra con la
+              sensibilidad poética, creando platos que no solo se comen, sino
+              que se sienten y se recuerdan.
+            </p>
+          </div>
+        </section>
+        <section>
+          <h2>Nuestro platos destacados</h2>
+          <div class="galeria-restaurante">
+            <figure>
+              <img src="./assets/images/gourmet1.jpg" alt="Solomillo con verduras" />
+              <figcaption>Solomillo con verduras</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/images/gourmet2.jpg" alt="Medallones Gourmet" />
+              <figcaption>Medallones Gourmet</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/images/gourmet3.jpg" alt="Pastelitos de carne" />
+              <figcaption>Pastelitos de carne</figcaption>
+            </figure>
+          </div>
+        </section>
+        <section>
+          <h2>La Filosofía "Zero Distance"</h2>
+          <p>
+            Nuestro concepto se basa en la honestidad absoluta. Trabajamos mano
+            a mano con productores, pescadores y recolectores de la región,
+            asegurando que cada ingrediente que llega a nuestra cocina sea una
+            expresión pura de su entorno. En <strong>L'Essence</strong>, el
+            <em>kilómetro cero</em> no es una etiqueta, es nuestra razón de ser.
+          </p>
+        </section>
+        <section>
+          <h2>El Viaje Gastronómico</h2>
+          <p>
+            Nuestra propuesta se articula en torno a
+            <em> menús degustación estacionales </em> que evolucionan con el
+            ciclo de la naturaleza. Cada pase es una coreografía de texturas,
+            temperaturas y contrastes:
+          </p>
+          <dl>
+            <dt>Innovación Técnica</dt>
+            <dd>
+              Utilizamos procesos como la <em>liofilización</em>, las
+              fermentaciones controladas y las cocciones a baja temperatura para
+              realzar la esencia del producto original.
+            </dd>
+
+            <dt>Maridaje de Autor</dt>
+            <dd>
+              Nuestra bodega es un organismo vivo que cuenta con etiquetas de
+              pequeños viticultores independientes y joyas ocultas de la
+              geografía española, seleccionadas para crear una sinergia perfecta
+              con cada bocado.
+            </dd>
+
+            <dt>Estética Minimalista</dt>
+            <dd>
+              reemos que la belleza reside en la simplicidad. El diseño de
+              nuestra sala, de líneas limpias y colores orgánicos, busca
+              eliminar cualquier distracción visual para que toda la atención
+              recaiga en el plato y en la compañía.
+            </dd>
+
+            <dt>Dirección</dt>
+            <dd>
+              Puedes encontrarnos en
+              <span class="ubicacion"
+                >Paseo de la Castellana, 95, 28046 Madrid</span
+              >
+            </dd>
+          </dl>
+        </section>
+        <section id="map" data-lat="40.4517648" data-lng="-3.6942279"></section>
+        <section>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/vmsZPZpI1hI?si=rYAHvsz27WNCDiD1"
+            title="YouTube video player"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </div>
+    </main>
+    <include src="./src/fragments/footer.html"></include>
+  </body>
 </html>

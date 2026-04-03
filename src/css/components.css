@@ -26,7 +26,9 @@
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
-  transition: transform var(--transition-duration) ease-in-out, box-shadow var(--transition-duration) ease-in-out;
+  transition:
+    transform var(--transition-duration) ease-in-out,
+    box-shadow var(--transition-duration) ease-in-out;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -38,6 +40,11 @@
     .imagen-restaurante img {
       transform: scale(1.05);
     }
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5rem;
   }
 
   .imagen-restaurante {
@@ -69,22 +76,11 @@
 
   .card-info {
     padding: 1rem;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     color: color-mix(var(--text-900) 80%, transparent);
-
-    .ubicacion {
-      color: color-mix(var(--text-900) 60%, transparent);
-
-      &::before {
-        content: url(./assets/icons/location.svg);
-        display: inline-block;
-        height: 0.8rem;
-        width: 0.8rem;
-        margin-right: 0.2rem;
-      }
-    }
 
     h3 {
       font-size: 1.6rem;
@@ -102,5 +98,68 @@
         );
       }
     }
+  }
+
+  .descripcion-restaurante {
+    flex-grow: 1;
+  }
+}
+
+.ubicacion {
+  color: color-mix(var(--text-900) 60%, transparent);
+
+  &::before {
+    content: url(./assets/icons/location.svg);
+    display: inline-block;
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-right: 0.2rem;
+  }
+}
+
+.info-restaurante {
+  color: color-mix(var(--text-900) 60%, var(--color-white));
+  padding: 1rem;
+
+  .intro-restaurante {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.galeria-restaurante {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+
+  figcaption {
+    text-align: center;
+  }
+}
+
+section#map {
+  height: 300px;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+@media (max-width: 1200px) {
+  .info-restaurante {
+    .intro-restaurante {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .galeria-restaurante {
+    display: flex;
+    flex-direction: column;
   }
 }

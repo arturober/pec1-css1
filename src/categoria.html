@@ -1,107 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <include src="./src/fragments/header.html"></include>
-    
+
     <main>
-        <div class="main-intro text-center">
-            <h1>Descubre nuestros restaurantes</h1>
-            <p>Selección de los mejores restaurantes de tu zona</p>
-        </div>
-        <div class="grid-restaurantes main-container">
-        
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
+      <div class="main-intro text-center">
+        <h1>Descubre nuestros restaurantes</h1>
+        <p>Selección de los mejores restaurantes de tu zona</p>
+      </div>
+      <div class="grid-restaurantes main-container">
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Brasería</span>
+            <img
+              class="img-braseria"
+              src="./assets/images/braseria.jpg"
+              alt="Interior Restaurante Abrasas & Humo"
+            />
+          </div>
+          <div class="card-info">
+            <h2>Abrasas & Humo</h2>
+            <p class="descripcion-restaurante">
+              El sabor ancestral del fuego y las mejores carnes maduradas en un
+              entorno rústico y acogedor.
+            </p>
+            <span class="ubicacion"
+              >Calle de los Herreros, 14, 05001 Ávila</span
+            >
+            <a
+              href="/det1"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante Abrasas & Humo"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
 
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Gourmet</span>
+            <img
+              class="img-gourmet"
+              src="./assets/images/gourmet.jpg"
+              alt="Interior Restaurante L'Essence"
+            />
+          </div>
+          <div class="card-info">
+            <h2 lang="fr">L'Essence</h2>
+            <p class="descripcion-restaurante">
+              Una experiencia de estrella Michelin en el corazón de la ciudad.
+              Especializados en menú degustación de 12 tiempos con maridaje de
+              autor.
+            </p>
+            <span class="ubicacion"
+              >Paseo de la Castellana, 95, 28046 Madrid</span
+            >
+            <a
+              href="/det2"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante L'Essence"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
 
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Italiana</span>
+            <img
+              src="./assets/images/pizzeria.jpg"
+              alt="Interior Restaurante Antica Pizzeria Da Giovanni"
+            />
+          </div>
+          <div class="card-info">
+            <h2 lang="it">Antica Pizzeria Da Giovanni</h2>
+            <p class="descripcion-restaurante">
+              Auténtica pizza napolitana de masa madre y fermentación lenta,
+              directa desde nuestro horno de piedra.
+            </p>
+            <span class="ubicacion"
+              >Carrer del Consell de Cent, 312, 08007 Barcelona.</span
+            >
+            <a
+              href="#"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante Antica Pizzeria Da Giovanni"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
 
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Alta Cocina</span>
+            <img
+              src="./assets/images/playa.jpg"
+              alt="Interior Restaurante Brisa Marina"
+            />
+          </div>
+          <div class="card-info">
+            <h2>Brisa Marina</h2>
+            <p class="descripcion-restaurante">
+              El lujo de la alta cocina frente al Mediterráneo, especializado en
+              arroces de autor y pescados salvajes.
+            </p>
+            <span class="ubicacion"
+              >Avenida del Mediterráneo, s/n, 03503 Benidorm, Alicante.</span
+            >
+            <a
+              href="#"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante Brisa Marina"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
 
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Francesa</span>
+            <img
+              src="./assets/images/rest_frances.jpg"
+              alt="Interior Restaurante Château d'Or"
+            />
+          </div>
+          <div class="card-info">
+            <h2 lang="fr">Château d'Or</h2>
+            <p class="descripcion-restaurante">
+              Refinamiento galo y clásicos atemporales de la
+              <span lang="fr">haute cuisine</span> en un entorno palaciego.
+            </p>
+            <span class="ubicacion"
+              >Calle de Alfonso I, 22, 50003 Zaragoza.</span
+            >
+            <a
+              href="#"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante Château d'Or"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
 
-            <article class="card-restaurante">
-                <div class="imagen-restaurante">
-                    <span class="etiqueta">Alta Cocina</span>
-                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=800&auto=format&fit=crop" alt="Interior Restaurante L'Étoile">
-                </div>
-                <div class="card-info">
-                    <span class="ubicacion">Madrid, Centro Histórico</span>
-                    <h3>L'Étoile</h3>
-                    <p>Una experiencia de estrella Michelin en el corazón de la ciudad. Especializados en menú degustación de 12 tiempos con maridaje de autor.</p>
-                    <a href="/det1" class="btn text-center bg-accent">Visitar Restaurante</a>
-                </div>
-            </article>
-        </div>
+        <article class="card-restaurante">
+          <div class="imagen-restaurante">
+            <span class="etiqueta">Alta Cocina</span>
+            <img
+              src="./assets/images/tapas.jpg"
+              alt="Interior Restaurante La Esquina del Tapeo"
+            />
+          </div>
+          <div class="card-info">
+            <h2>La Esquina del Tapeo</h2>
+            <p class="descripcion-restaurante">
+              El alma de la barra española: tradición, alegría y la mejor
+              selección de vinos y cañas.
+            </p>
+            <span class="ubicacion">Plaza de las Flores, 4, 30004 Murcia.</span>
+            <a
+              href="#"
+              class="btn text-center bg-accent"
+              aria-label="Visitar el restaurante La Esquina del Tapeo"
+              >Visitar Restaurante</a
+            >
+          </div>
+        </article>
+      </div>
     </main>
 
     <include src="./src/fragments/footer.html"></include>
-</body>
+  </body>
 </html>

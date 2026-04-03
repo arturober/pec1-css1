@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,9 +10,83 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <include src="./src/fragments/header.html"></include>
+    <main>
+      <div class="main-intro text-center">
+        <h1>Enlaces</h1>
+        <p>
+          Enlaces a las fuentes principales consultadas y usadas para generar el
+          contenido.
+        </p>
+      </div>
+      <div class="main-container">
+        <section>
+          <h2>Documentación</h2>
+          <dl>
+            <dt class="text-primary text-underline">
+              <a href="https://parceljs.org/getting-started/webapp/"
+                >Creación de un proyecto Parcel</a
+              >
+            </dt>
+            <dd>
+              Utilizada para consultar como crear y configurar un proyecto
+              Parcel utilizando npm create.
+            </dd>
+            <dt class="text-primary text-underline">
+              <a href="https://github.com/browserslist/browserslist#full-list"
+                >Documentación Browserlist</a
+              >
+            </dt>
+            <dd>
+              Utilizada para consultar como configurar la compatibilidad con los
+              navegadores activos de los últimos 10 años
+            </dd>
+            <dt class="text-primary text-underline">
+              <a href="https://openlayers.org/">Web de Openlayers</a>
+            </dt>
+            <dd>
+              Utilizada para consultar como mostrar un mapa utilizando esta
+              librería gratuita y de código abierto.
+            </dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Contenido</h2>
+          <dl>
+            <dt class="text-primary text-underline">
+              <a href="https://www.realtimecolors.com/"
+                >Web de RealtimeColors</a
+              >
+            </dt>
+            <dd>
+              Utilizada para crear el tema de colores de la web, exportado como
+              variables CSS.
+            </dd>
+            <dt class="text-primary text-underline">
+              <a href="https://fonts.google.com/icons">Material Symbols</a>
+            </dt>
+            <dd>
+              Utilizada para descargar algunos iconos en formato SVG que se han
+              utilizado en la web.
+            </dd>
+            <dt class="text-primary text-underline">
+              <a href="https://www.realtimecolors.com/"
+                >Web de RealtimeColors</a
+              >
+            </dt>
+            <dd>
+              Utilizada solamente para generar la información de los
+              restaurantes, así como las imágenes mediante Nano Banana. De esta
+              manera, este sitio web no utiliza contenido sujeto a derechos de
+              autor.
+            </dd>
+          </dl>
+        </section>
+      </div>
+    </main>
+    <include src="./src/fragments/footer.html"></include>
+  </body>
 </html>
