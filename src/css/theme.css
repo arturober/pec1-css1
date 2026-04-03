@@ -153,15 +153,9 @@
 
 /* 3. Contraste Aumentado */
 @media (prefers-contrast: more) {
-  .button {
-    border: 2px solid var(--text-color);
-  }
-
-  .card {
-    border: 2px solid var(--secondary-color);
-  }
-
-  .sidebar a {
-    border: 1px dotted var(--primary-color);
+  .imagen-restaurante {
+    .etiqueta {
+      color: var(--secondary-700);
+    }
   }
 }
