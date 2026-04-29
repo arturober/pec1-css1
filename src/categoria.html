@@ -10,8 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <include src="./src/fragments/activate-view-transitions.html"></include>
+    <style>
+      .img-restaurante1 {
+        object-fit: cover;
+        view-transition-name: restaurant-image1;
+      }
+
+      .img-restaurante2 {
+        object-fit: cover;
+        view-transition-name: restaurant-image2;
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <include src="./src/fragments/header.html"></include>
 
@@ -24,11 +37,40 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Brasería</span>
-            <img
-              class="img-braseria"
-              src="./assets/images/braseria.jpg"
-              alt="Interior Restaurante Abrasas & Humo"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/braseria.jpg?as=avif&width=400   400w,
+                  ./assets/images/braseria.jpg?as=avif&width=800   800w,
+                  ./assets/images/braseria.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/braseria.jpg?as=webp&width=400   400w,
+                  ./assets/images/braseria.jpg?as=webp&width=800   800w,
+                  ./assets/images/braseria.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/braseria.jpg?width=400"
+                class="img-restaurante1"
+                fetchpriority="high"
+                loading="eager"
+                srcset="
+                  ./assets/images/braseria.jpg?width=400   400w,
+                  ./assets/images/braseria.jpg?width=800   800w,
+                  ./assets/images/braseria.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior de Abrasas & Humo"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2>Abrasas & Humo</h2>
@@ -51,11 +93,40 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Gourmet</span>
-            <img
-              class="img-gourmet"
-              src="./assets/images/gourmet.jpg"
-              alt="Interior Restaurante L'Essence"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/gourmet.jpg?as=avif&width=400   400w,
+                  ./assets/images/gourmet.jpg?as=avif&width=800   800w,
+                  ./assets/images/gourmet.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/gourmet.jpg?as=webp&width=400   400w,
+                  ./assets/images/gourmet.jpg?as=webp&width=800   800w,
+                  ./assets/images/gourmet.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/gourmet.jpg?width=400"
+                class="img-restaurante2"
+                fetchpriority="high"
+                loading="eager"
+                srcset="
+                  ./assets/images/gourmet.jpg?width=400   400w,
+                  ./assets/images/gourmet.jpg?width=800   800w,
+                  ./assets/images/gourmet.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior L'essence"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2 lang="fr">L'Essence</h2>
@@ -79,10 +150,38 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Italiana</span>
-            <img
-              src="./assets/images/pizzeria.jpg"
-              alt="Interior Restaurante Antica Pizzeria Da Giovanni"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/pizzeria.jpg?as=avif&width=400   400w,
+                  ./assets/images/pizzeria.jpg?as=avif&width=800   800w,
+                  ./assets/images/pizzeria.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/pizzeria.jpg?as=webp&width=400   400w,
+                  ./assets/images/pizzeria.jpg?as=webp&width=800   800w,
+                  ./assets/images/pizzeria.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/pizzeria.jpg?width=400"
+                class="img-restaurante3"
+                srcset="
+                  ./assets/images/pizzeria.jpg?width=400   400w,
+                  ./assets/images/pizzeria.jpg?width=800   800w,
+                  ./assets/images/pizzeria.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior Antica Pizzería de Giovanni"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2 lang="it">Antica Pizzeria Da Giovanni</h2>
@@ -105,10 +204,38 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Alta Cocina</span>
-            <img
-              src="./assets/images/playa.jpg"
-              alt="Interior Restaurante Brisa Marina"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/playa.jpg?as=avif&width=400   400w,
+                  ./assets/images/playa.jpg?as=avif&width=800   800w,
+                  ./assets/images/playa.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/playa.jpg?as=webp&width=400   400w,
+                  ./assets/images/playa.jpg?as=webp&width=800   800w,
+                  ./assets/images/playa.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/playa.jpg?width=400"
+                class="img-restaurante4"
+                srcset="
+                  ./assets/images/playa.jpg?width=400   400w,
+                  ./assets/images/playa.jpg?width=800   800w,
+                  ./assets/images/playa.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior Brisa Marina"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2>Brisa Marina</h2>
@@ -131,10 +258,38 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Francesa</span>
-            <img
-              src="./assets/images/rest_frances.jpg"
-              alt="Interior Restaurante Château d'Or"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/rest_frances.jpg?as=avif&width=400   400w,
+                  ./assets/images/rest_frances.jpg?as=avif&width=800   800w,
+                  ./assets/images/rest_frances.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/rest_frances.jpg?as=webp&width=400   400w,
+                  ./assets/images/rest_frances.jpg?as=webp&width=800   800w,
+                  ./assets/images/rest_frances.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/rest_frances.jpg"
+                class="img-restaurante5"
+                srcset="
+                  ./assets/images/rest_frances.jpg?width=400   400w,
+                  ./assets/images/rest_frances.jpg?width=800   800w,
+                  ./assets/images/rest_frances.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior Restaurante Château d'Or"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2 lang="fr">Château d'Or</h2>
@@ -157,10 +312,38 @@
         <article class="card-restaurante">
           <div class="imagen-restaurante">
             <span class="etiqueta">Alta Cocina</span>
-            <img
-              src="./assets/images/tapas.jpg"
-              alt="Interior Restaurante La Esquina del Tapeo"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./assets/images/tapas.jpg?as=avif&width=400   400w,
+                  ./assets/images/tapas.jpg?as=avif&width=800   800w,
+                  ./assets/images/tapas.jpg?as=avif&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/tapas.jpg?as=webp&width=400   400w,
+                  ./assets/images/tapas.jpg?as=webp&width=800   800w,
+                  ./assets/images/tapas.jpg?as=webp&width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+              />
+
+              <img
+                src="./assets/images/tapas.jpg"
+                class="img-restaurante6"
+                srcset="
+                  ./assets/images/tapas.jpg?width=400   400w,
+                  ./assets/images/tapas.jpg?width=800   800w,
+                  ./assets/images/tapas.jpg?width=1200 1200w
+                "
+                sizes="(max-width: 720px) 100vw, (max-width: 1071px) 50vw, 400px"
+                alt="Interior Restaurante La Esquina del Tapeo"
+              />
+            </picture>
           </div>
           <div class="card-info">
             <h2>La Esquina del Tapeo</h2>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor" id="menu">
+  <path class="line top" d="M120-640v-80h720v80H120Z"/>
+  
+  <path class="line middle" d="M120-440v-80h720v80H120Z"/>
+  
+  <path class="line bottom" d="M120-240v-80h720v80H120Z"/>
+</svg>

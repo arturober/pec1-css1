@@ -1,7 +1,11 @@
 /* En esta capa va el estilo del la estructura principal de la página */
 
 body.portada {
-  background-image: url("./assets/images/portada.jpg");
+  background-image: image-set(
+    url("./assets/images/portada.jpg?as=avif") type("image/avif"),
+    url("./assets/images/portada.jpg?as=webp") type("image/webp"),
+    url("./assets/images/portada.jpg") type("image/jpeg")
+  );
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -28,9 +32,63 @@ body.portada {
       font-weight: bold;
     }
 
+    .barbacoa {
+      position: relative;
+      top: 10px;
+
+      .smoke {
+        opacity: 0;
+      }
+
+      .smoke-left {
+        animation: humo-sube 1.8s infinite ease-in-out;
+      }
+
+      .smoke-mid {
+        animation: humo-sube 1.8s infinite ease-in-out 0.3s;
+      }
+
+      .smoke-right {
+        animation: humo-sube 1.8s infinite ease-in-out 0.6s;
+      }
+    }
+
     .portada-subtitle {
       padding-top: 1rem;
       font-size: 2.5rem;
+      opacity: 0;
+      animation: fadeInRight var(--animation-duration) forwards ease-out;
+    }
+
+    .portada-text {
+      animation: fadeInRight var(--animation-duration) 100ms forwards ease-out;
+    }
+
+    .insignia-container {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      filter: drop-shadow(2px 2px white) drop-shadow(-2px 2px white) drop-shadow(2px -2px white) drop-shadow(-2px -2px white)
+      drop-shadow(0px 0px 8px black);
+      opacity: 0;
+      animation: fadeInRight var(--animation-duration) 200ms forwards ease-out;
+    }
+
+    .insignia {
+      font-size: 0.8rem;
+      background-image: image-set(
+        url("./assets/images/certificado.jpg?as=avif&width=200")
+          type("image/avif"),
+        url("./assets/images/certificado.jpg?as=webp&width=200")
+          type("image/webp"),
+        url("./assets/images/certificado.jpg?width=200") type("image/jpeg")
+      );
+      background-size: contain;
+      background-position-y: 200px;
+
+      height: 120px;
+      width: 100px;
+      margin: auto;
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
     }
 
     nav ul {
@@ -76,6 +134,7 @@ header {
 
   a:not(.title) {
     padding: 0.5rem 1rem;
+    transition: background-color var(--transition-duration) ease-in-out;
     &:hover {
       background-color: var(--primary-100);
     }
@@ -127,6 +186,17 @@ footer .main-container {
   .main-container {
     max-width: none;
   }
+
+  /* Relación de aspecto 16:9*/
+  @media (max-height: 675px) {
+    body.portada {
+      background-image: image-set(
+        url("./assets/images/portada.jpg?as=avif&width=1200") type("image/avif"),
+        url("./assets/images/portada.jpg?as=webp&width=1200") type("image/webp"),
+        url("./assets/images/portada.jpg?width=1200") type("image/jpeg")
+      );
+    }
+  }
 }
 
 @media (max-width: 800px) {
@@ -138,6 +208,16 @@ footer .main-container {
         display: inline-block;
         color: var(--accent-800);
         transition: color var(--transition-duration) ease-in-out;
+
+        .line {
+          z-index: 10;
+          transition:
+            transform 0.3s ease,
+            color 0.3s ease,
+            opacity 0.3s ease;
+          transform-origin: center;
+          transform-box: fill-box;
+        }
       }
 
       ul {
@@ -173,6 +253,18 @@ footer .main-container {
 
       #menu-opened:checked ~ .menu-btn {
         color: var(--color-white);
+        .top {
+          transform: translateY(200px) rotate(45deg);
+        }
+
+        .middle {
+          opacity: 0;
+          transform: scaleX(0);
+        }
+
+        .bottom {
+          transform: translateY(-200px) rotate(-45deg);
+        }
       }
     }
   }

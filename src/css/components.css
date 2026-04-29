@@ -10,6 +10,13 @@
 
   h1 {
     font-size: 2rem;
+    opacity: 0;
+    animation: fadeInRight var(--animation-duration) forwards ease-out;
+  }
+
+  p {
+    opacity: 0;
+    animation: fadeInRight var(--animation-duration) 100ms forwards ease-out;
   }
 }
 
@@ -32,6 +39,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  opacity: 0;
 
   &:hover {
     transform: translateY(-5px);
@@ -39,6 +47,7 @@
 
     .imagen-restaurante img {
       transform: scale(1.05);
+      filter: grayscale(0);
     }
   }
 
@@ -69,8 +78,10 @@
     img {
       height: 100%;
       width: 100%;
+      aspect-ratio: 16/9;
       object-fit: cover;
-      transition: transform 300ms ease-in-out;
+      filter: grayscale(0.5);
+      transition: transform var(--transition-duration) ease-in-out, filter var(--transition-duration) ease-in-out;
     }
   }
 
@@ -102,6 +113,25 @@
 
   .descripcion-restaurante {
     flex-grow: 1;
+  }
+
+  &:nth-child(1) {
+    animation: fadeInUp var(--animation-duration) ease-out 0s forwards;
+  }
+  &:nth-child(2) {
+    animation: fadeInUp var(--animation-duration) ease-out 100ms forwards;
+  }
+  &:nth-child(3) {
+    animation: fadeInUp var(--animation-duration) ease-out 200ms forwards;
+  }
+  &:nth-child(4) {
+    animation: fadeInUp var(--animation-duration) ease-out 300ms forwards;
+  }
+  &:nth-child(5) {
+    animation: fadeInUp var(--animation-duration) ease-out 400ms forwards;
+  }
+  &:nth-child(6) {
+    animation: fadeInUp var(--animation-duration) ease-out 500ms forwards;
   }
 }
 
