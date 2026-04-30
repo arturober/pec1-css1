@@ -1,5 +1,4 @@
 /* En esta capa va el estilo del la estructura principal de la página */
-
 body.portada {
   background-image: image-set(
     url("./assets/images/portada.jpg?as=avif") type("image/avif"),

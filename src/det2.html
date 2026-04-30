@@ -33,16 +33,19 @@
     <div class="main-container info-restaurante flex-col">
       <section class="intro-restaurante">
         <picture>
-          <source type="image/avif"
-            srcset="./assets/images/gourmet.jpg?as=avif&width=400 400w, ./assets/images/gourmet.jpg?as=avif&width=800 800w, ./assets/images/gourmet.jpg?as=avif&width=1200 1200w"
-            sizes="(max-width: 1200px) 100vw, 600px" />
-          <source type="image/webp"
-            srcset="./assets/images/gourmet.jpg?as=webp&width=400 400w, ./assets/images/gourmet.jpg?as=webp&width=800 800w, ./assets/images/gourmet.jpg?as=webp&width=1200 1200w"
-            sizes="(max-width: 1200px) 100vw, 600px" />
+          <source type="image/avif" srcset="./assets/images/gourmet.jpg?as=avif&width=800&height=600&fit=cover"
+            media="(max-width: 800px)" />
+          <source type="image/webp" srcset="./assets/images/gourmet.jpg?as=webp&width=800&height=600&fit=cover"
+            media="(max-width: 800px)" />
+          <source type="image/avif" srcset="./assets/images/gourmet.jpg?as=avif&width=1200&height=400&fit=cover"
+            media="(max-width: 1200px)" />
+          <source type="image/webp" srcset="./assets/images/gourmet.jpg?as=webp&width=1200&height=400&fit=cover"
+            media="(max-width: 1200px)" />
+          <source type="image/avif" srcset="./assets/images/gourmet.jpg?as=webp&width=600&height=250&fit=cover" />
+          <source type="image/webp" srcset="./assets/images/gourmet.jpg?as=webp&width=600&height=250&fit=cover" />
 
-          <img src="./assets/images/gourmet.jpg?width=400" class="img-restaurante2"
-            srcset="./assets/images/gourmet.jpg?width=400 400w, ./assets/images/gourmet.jpg?width=800 800w, ./assets/images/gourmet.jpg?width=1200 1200w"
-            sizes="(max-width: 1200px) 100vw, 600px" alt="Interior L'essence" fetchpriority="high" loading="eager" blocking="render" />
+          <img src="./assets/images/gourmet.jpg?width=600&height=250&fit=cover" class="img-restaurante2"
+            alt="Interior de L'Essence" fetchpriority="high" loading="eager" blocking="render" />
         </picture>
         <div class="flex-col">
           <p>
@@ -74,7 +77,7 @@
                 srcset="./assets/images/gourmet1.jpg?as=webp&width=400 400w, ./assets/images/gourmet1.jpg?as=webp&width=800 800w, ./assets/images/gourmet1.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/gourmet1.jpg?width=400" class="img-braseria"
+              <img src="./assets/images/gourmet1.jpg?width=400" class="img-gourmet"
                 srcset="./assets/images/gourmet1.jpg?width=400 400w, ./assets/images/gourmet1.jpg?width=800 800w, ./assets/images/gourmet1.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Solomillo con verduras"
                 loading="lazy" decoding="async" />
@@ -89,7 +92,7 @@
                 srcset="./assets/images/gourmet2.jpg?as=webp&width=400 400w, ./assets/images/gourmet2.jpg?as=webp&width=800 800w, ./assets/images/gourmet2.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/gourmet2.jpg?width=400" class="img-braseria"
+              <img src="./assets/images/gourmet2.jpg?width=400" class="img-gourmet"
                 srcset="./assets/images/gourmet2.jpg?width=400 400w, ./assets/images/gourmet2.jpg?width=800 800w, ./assets/images/gourmet2.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Medallones Gourmet"
                 loading="lazy" decoding="async" />
@@ -104,7 +107,7 @@
                 srcset="./assets/images/gourmet3.jpg?as=webp&width=400 400w, ./assets/images/gourmet3.jpg?as=webp&width=800 800w, ./assets/images/gourmet3.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/gourmet3.jpg?width=400" class="img-braseria"
+              <img src="./assets/images/gourmet3.jpg?width=400" class="img-gourmet"
                 srcset="./assets/images/gourmet3.jpg?width=400 400w, ./assets/images/gourmet3.jpg?width=800 800w, ./assets/images/gourmet3.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Pastelitos de carne"
                 loading="lazy" decoding="async" />
