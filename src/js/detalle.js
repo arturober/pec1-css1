@@ -1,13 +1,12 @@
-import { MapBuilder } from "./map-builder";
-
-function showMap() {
+async function showMap() {
   const mapSection = document.getElementById("map");
   const coords = {
     latitude: +mapSection.dataset.lat,
     longitude: +mapSection.dataset.lng,
   };
 
-  const mapBuilder = new MapBuilder(coords, "map", 16);
+  const mapModule = import('./map-builder');
+  const mapBuilder = new mapModule.MapBuilder(coords, "map", 16);
   const marker = mapBuilder.createMarker(coords);
 }
 
