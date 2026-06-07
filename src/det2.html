@@ -12,7 +12,9 @@
         view-transition-name: restaurant-image2;
       }
     </style>
-  <link rel="stylesheet" href="style.css?inline" />
+  <style>
+    @import "./style.css";
+  </style>
   <script type="module" src="js/detalle.js"></script>
   <script type="module" src="js/image-loader.js"></script>
 </head>
@@ -83,7 +85,8 @@
             <figcaption>Solomillo con verduras</figcaption>
           </figure>
           <figure>
-            <source type="image/avif"
+            <picture>
+              <source type="image/avif"
                 data-srcset="./assets/images/gourmet2.jpg?as=avif&width=400 400w, ./assets/images/gourmet2.jpg?as=avif&width=800 800w, ./assets/images/gourmet2.jpg?as=avif&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
               <source type="image/webp"
@@ -98,7 +101,8 @@
             <figcaption>Medallones Gourmet</figcaption>
           </figure>
           <figure>
-            <source type="image/avif"
+            <picture>
+              <source type="image/avif"
                 data-srcset="./assets/images/gourmet3.jpg?as=avif&width=400 400w, ./assets/images/gourmet3.jpg?as=avif&width=800 800w, ./assets/images/gourmet3.jpg?as=avif&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
               <source type="image/webp"
