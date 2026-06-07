@@ -45,7 +45,7 @@
           <source type="image/webp" srcset="./assets/images/gourmet.jpg?as=webp&width=600&height=250&fit=cover" />
 
           <img src="./assets/images/gourmet.jpg?width=600&height=250&fit=cover" class="img-restaurante2"
-            alt="Interior de L'Essence" fetchpriority="high" loading="eager" blocking="render" />
+            alt="Interior de L'Essence" fetchpriority="high" loading="lazy" />
         </picture>
         <div class="flex-col">
           <p>
@@ -176,7 +176,9 @@
               gyroscope;
               picture-in-picture;
               web-share;
-            " referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            " referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+             allowfullscreen></iframe>
       </section>
     </div>
   </main>
