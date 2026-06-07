@@ -23,6 +23,7 @@
       }
     </style>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/image-loader.js"></script>
   </head>
 
   <body>
@@ -40,7 +41,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/braseria.jpg?as=avif&width=400   400w,
                   ./assets/images/braseria.jpg?as=avif&width=800   800w,
                   ./assets/images/braseria.jpg?as=avif&width=1200 1200w
@@ -49,7 +50,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/braseria.jpg?as=webp&width=400   400w,
                   ./assets/images/braseria.jpg?as=webp&width=800   800w,
                   ./assets/images/braseria.jpg?as=webp&width=1200 1200w
@@ -58,11 +59,11 @@
               />
 
               <img
-                src="./assets/images/braseria.jpg?width=400"
-                class="img-restaurante1"
+                src="./assets/images/braseria.jpg?width=10"
+                class="lazy-load img-restaurante1"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/braseria.jpg?width=400 400w,
                   ./assets/images/braseria.jpg?width=800 800w,
                   ./assets/images/braseria.jpg?width=1200 1200w
@@ -96,7 +97,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/gourmet.jpg?as=avif&width=400   400w,
                   ./assets/images/gourmet.jpg?as=avif&width=800   800w,
                   ./assets/images/gourmet.jpg?as=avif&width=1200 1200w
@@ -105,7 +106,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/gourmet.jpg?as=webp&width=400   400w,
                   ./assets/images/gourmet.jpg?as=webp&width=800   800w,
                   ./assets/images/gourmet.jpg?as=webp&width=1200 1200w
@@ -114,11 +115,11 @@
               />
 
               <img
-                src="./assets/images/gourmet.jpg?width=400"
-                class="img-restaurante2"
+                src="./assets/images/gourmet.jpg?width=10"
+                class="lazy-load img-restaurante2"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/gourmet.jpg?width=400   400w,
                   ./assets/images/gourmet.jpg?width=800   800w,
                   ./assets/images/gourmet.jpg?width=1200 1200w
@@ -153,7 +154,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/pizzeria.jpg?as=avif&width=400   400w,
                   ./assets/images/pizzeria.jpg?as=avif&width=800   800w,
                   ./assets/images/pizzeria.jpg?as=avif&width=1200 1200w
@@ -162,7 +163,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/pizzeria.jpg?as=webp&width=400   400w,
                   ./assets/images/pizzeria.jpg?as=webp&width=800   800w,
                   ./assets/images/pizzeria.jpg?as=webp&width=1200 1200w
@@ -171,11 +172,11 @@
               />
 
               <img
-                src="./assets/images/pizzeria.jpg?width=400"
-                class="img-restaurante3"
+                src="./assets/images/pizzeria.jpg?width=10"
+                class="lazy-load img-restaurante3"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/pizzeria.jpg?width=400   400w,
                   ./assets/images/pizzeria.jpg?width=800   800w,
                   ./assets/images/pizzeria.jpg?width=1200 1200w
@@ -209,7 +210,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/playa.jpg?as=avif&width=400   400w,
                   ./assets/images/playa.jpg?as=avif&width=800   800w,
                   ./assets/images/playa.jpg?as=avif&width=1200 1200w
@@ -218,7 +219,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/playa.jpg?as=webp&width=400   400w,
                   ./assets/images/playa.jpg?as=webp&width=800   800w,
                   ./assets/images/playa.jpg?as=webp&width=1200 1200w
@@ -227,11 +228,11 @@
               />
 
               <img
-                src="./assets/images/playa.jpg?width=400"
-                class="img-restaurante4"
+                src="./assets/images/playa.jpg?width=10"
+                class="lazy-load img-restaurante4"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/playa.jpg?width=400   400w,
                   ./assets/images/playa.jpg?width=800   800w,
                   ./assets/images/playa.jpg?width=1200 1200w
@@ -265,7 +266,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/rest_frances.jpg?as=avif&width=400   400w,
                   ./assets/images/rest_frances.jpg?as=avif&width=800   800w,
                   ./assets/images/rest_frances.jpg?as=avif&width=1200 1200w
@@ -274,7 +275,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/rest_frances.jpg?as=webp&width=400   400w,
                   ./assets/images/rest_frances.jpg?as=webp&width=800   800w,
                   ./assets/images/rest_frances.jpg?as=webp&width=1200 1200w
@@ -283,11 +284,11 @@
               />
 
               <img
-                src="./assets/images/rest_frances.jpg"
-                class="img-restaurante5"
+                src="./assets/images/rest_frances.jpg?width=10"
+                class="lazy-load img-restaurante5"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/rest_frances.jpg?width=400   400w,
                   ./assets/images/rest_frances.jpg?width=800   800w,
                   ./assets/images/rest_frances.jpg?width=1200 1200w
@@ -321,7 +322,7 @@
             <picture>
               <source
                 type="image/avif"
-                srcset="
+                data-srcset="
                   ./assets/images/tapas.jpg?as=avif&width=400   400w,
                   ./assets/images/tapas.jpg?as=avif&width=800   800w,
                   ./assets/images/tapas.jpg?as=avif&width=1200 1200w
@@ -330,7 +331,7 @@
               />
               <source
                 type="image/webp"
-                srcset="
+                data-srcset="
                   ./assets/images/tapas.jpg?as=webp&width=400   400w,
                   ./assets/images/tapas.jpg?as=webp&width=800   800w,
                   ./assets/images/tapas.jpg?as=webp&width=1200 1200w
@@ -339,11 +340,11 @@
               />
 
               <img
-                src="./assets/images/tapas.jpg"
-                class="img-restaurante6"
+                src="./assets/images/tapas.jpg?width=10"
+                class="lazy-load img-restaurante6"
                 loading="lazy"
                 height="200"
-                srcset="
+                data-srcset="
                   ./assets/images/tapas.jpg?width=400   400w,
                   ./assets/images/tapas.jpg?width=800   800w,
                   ./assets/images/tapas.jpg?width=1200 1200w

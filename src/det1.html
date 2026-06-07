@@ -17,6 +17,7 @@
     </style>
   <link rel="stylesheet" href="style.css" />
   <script type="module" src="js/detalle.js"></script>
+  <script type="module" src="js/image-loader.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,8 @@
           <source type="image/avif" srcset="./assets/images/braseria.jpg?as=webp&width=600&height=250&fit=cover" />
           <source type="image/webp" srcset="./assets/images/braseria.jpg?as=webp&width=600&height=250&fit=cover" />
 
-          <img src="./assets/images/braseria.jpg?width=600&height=250&fit=cover" class="img-restaurante1"
-            alt="Interior de Abrasas & Humo" fetchpriority="high" loading="lazy"  />
+          <img src="./assets/images/braseria.jpg?width=600&height=250&fit=cover" class="lazy-load img-restaurante1"
+            alt="Interior de Abrasas & Humo" fetchpriority="high" />
         </picture>
         <div class="flex-col">
           <p>
@@ -77,10 +78,10 @@
                 srcset="./assets/images/braseria1.jpg?as=webp&width=400 400w, ./assets/images/braseria1.jpg?as=webp&width=800 800w, ./assets/images/braseria1.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/braseria1.jpg?width=400"
+              <img src="./assets/images/braseria1.jpg?width=400" class="lazy-load"
                 srcset="./assets/images/braseria1.jpg?width=400 400w, ./assets/images/braseria1.jpg?width=800 800w, ./assets/images/braseria1.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Entrecot a la brasa"
-                loading="lazy" decoding="async" />
+                decoding="async" />
             </picture>
             <figcaption>Entrecot a la brasa</figcaption>
           </figure>
@@ -93,10 +94,10 @@
                 srcset="./assets/images/braseria2.jpg?as=webp&width=400 400w, ./assets/images/braseria2.jpg?as=webp&width=800 800w, ./assets/images/braseria2.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/braseria2.jpg?width=400"
+              <img src="./assets/images/braseria2.jpg?width=400" class="lazy-load"
                 srcset="./assets/images/braseria2.jpg?width=400 400w, ./assets/images/braseria2.jpg?width=800 800w, ./assets/images/braseria2.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Parrillada de verduras"
-                loading="lazy" decoding="async" />
+                decoding="async" />
             </picture>
             <figcaption>Parrillada de verduras</figcaption>
           </figure>
@@ -109,10 +110,10 @@
                 srcset="./assets/images/braseria3.jpg?as=webp&width=400 400w, ./assets/images/braseria3.jpg?as=webp&width=800 800w, ./assets/images/braseria3.jpg?as=webp&width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" />
 
-              <img src="./assets/images/braseria3.jpg?width=400"
+              <img src="./assets/images/braseria3.jpg?width=400" class="lazy-load"
                 srcset="./assets/images/braseria3.jpg?width=400 400w, ./assets/images/braseria3.jpg?width=800 800w, ./assets/images/braseria3.jpg?width=1200 1200w"
                 sizes="(max-width: 800px) 100vw, (max-width: 1200px) 33w, 400px" alt="Hamburguesa a la brasa"
-                loading="lazy" decoding="async" />
+                decoding="async" />
             </picture>
             <figcaption>Hamburguesa a la brasa</figcaption>
           </figure>
@@ -164,8 +165,9 @@
       </section>
       <section id="map" data-lat="40.65670019372843" data-lng="-4.693957914153591"></section>
       <section>
-        <iframe class="video" src="https://www.youtube.com/embed/bfwozOvEVdI?si=pev9vYXSaLDeUiQa"
-          title="YouTube video player" allow="
+        <iframe class="video lazy-load"
+        src="about:blank" 
+        data-src="https://www.youtube.com/embed/bfwozOvEVdI?si=pev9vYXSaLDeUiQa" title="YouTube video player" allow="
               accelerometer;
               autoplay;
               clipboard-write;
